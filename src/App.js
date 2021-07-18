@@ -1,19 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
+import Routes from './routes'
 
-
-
-function App(props) {
-
-  const [usuario, setUsuario] = useState('');
-
-  function handlePesquisa(){
-    console.log(usuario)
-  }
-
+function App(){
   return (
     <>
-    <input className="usuarioInput" value={usuario} placeholder="Usuário" onChange={e => setUsuario(e.target.value)}/>
-    <button type="button" onClick={handlePesquisa}>Pesquisar</button>
+      <Routes />
     </>
   );
 }
